@@ -1,9 +1,10 @@
 from django.db import models
 
+
 class Curso(models.Model):
 
     nombre = models.CharField(max_length=40)
-    comicion = models.IntegerField()
+    comision = models.IntegerField()
 
 class Estudiante(models.Model):
     nombre = models.CharField(max_length=30)
@@ -18,6 +19,6 @@ class Profesor(models.Model):
 
 class Entregables(models.Model):
     nombre = models.CharField(max_length=30)
-    fechaDeEntrega = models.CharField(max_length=20)
+    fechaDeEntrega = models.DateField(max_length=20)
     entregado = models.BooleanField()
     

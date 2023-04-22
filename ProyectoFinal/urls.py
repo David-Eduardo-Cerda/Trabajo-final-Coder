@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from PrimeraApp.views import crear_curso
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('crear_curso/', crear_curso),
 ]
