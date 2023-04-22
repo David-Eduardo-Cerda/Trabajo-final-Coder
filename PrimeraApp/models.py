@@ -4,7 +4,7 @@ from django.db import models
 class Curso(models.Model):
 
     nombre = models.CharField(max_length=40)
-    comision = models.IntegerField()
+    comision = models.CharField(max_length=23)
 
 class Estudiante(models.Model):
     nombre = models.CharField(max_length=30)

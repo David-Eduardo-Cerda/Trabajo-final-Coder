@@ -7,7 +7,7 @@ def crear_curso(request):
       
 
       nombre_curso = "Python"
-      comision_curso = 51325
+      comision_curso = "david"
 
       curso = Curso(nombre = nombre_curso, comision = comision_curso)
 
