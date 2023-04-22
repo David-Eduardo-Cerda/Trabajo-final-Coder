@@ -1,16 +1,17 @@
 
 from django.urls import path
-from .views import *
+from PrimeraApp import views 
+from PrimeraApp import Template
 
 
 urlpatterns = [
    
-    path('', InicioApp),
-    path('crear_curso/', crear_curso),
-    path('Cursos/' , Cursos),
-    path('Profesores/' , Profesores),
-    path('Estudiantes/' , Estudiantes),
-    path('Entregables/', Entregables ),
+    path('', views.InicioApp),
+    path('crear_curso/', views.crear_curso , name="Cursos"),
+    path('Cursos/' , views.Cursos),
+    path('Profesores/' , views.Profesores),
+    path('Estudiantes/' , views.Estudiantes),
+    path('Entregables/', views.Entregables ),
 
 ]
     

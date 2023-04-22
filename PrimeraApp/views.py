@@ -1,6 +1,7 @@
-from django.shortcuts import render
-from .models import Curso
+from django.shortcuts import render 
+from .models import Curso 
 from django.http import HttpResponse
+
 
 
 def crear_curso(request):
@@ -19,10 +20,10 @@ def crear_curso(request):
 
 
 def Cursos(request):
-      return HttpResponse ('estos son los cursos') 
-
+      return render(request , 'Template/Cursos.html') 
+ 
 def Estudiantes(request):
-      return HttpResponse ('estos son los estudiantes') 
+      return render (request ,'Template/Estudiantes.html') 
 
 def Profesores(request):
       return HttpResponse ('estos son los profesores') 
