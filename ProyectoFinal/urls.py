@@ -15,13 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include
-from PrimeraApp.views import Inicio
-from PrimeraApp.Template import *
+from PrimeraApp.views import inicio
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('' , Inicio ),
+    path('' , inicio ),
 
     path('PrimeraApp/' , include('PrimeraApp.urls')),
 

@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 
-def crear_curso(request):
+"""def crear_curso(request):
       
 
       nombre_curso = "Python"
@@ -16,23 +16,23 @@ def crear_curso(request):
 
       respuesta = f"Curso creado --- {nombre_curso} --- {comision_curso}"
 
-      return HttpResponse(respuesta)
+      return HttpResponse(respuesta)"""
 
 
 def Cursos(request):
-      return render(request , 'Template/Cursos.html') 
+      return render(request , 'template/Cursos.html') 
  
 def Estudiantes(request):
-      return render (request ,'Template/Estudiantes.html') 
+      return render (request ,'template/Estudiantes.html') 
 
 def Profesores(request):
-      return HttpResponse ('estos son los profesores') 
+      return render (request,'template/Profesores.html') 
 
 def Entregables(request):
-      return HttpResponse ('estos son los entregables') 
+      return render (request, 'template/Entregables.html') 
 
-def Inicio(request):
-      return HttpResponse('Bienvenido a la paginaprincipal')
+def inicio(request):
+      return render(request ,'template/inicio.html')
 
 def InicioApp(request):
-      return HttpResponse('Bienvenidos a la pagina principal de la app')
+      return render(request ,'template/InicioApp.html')
