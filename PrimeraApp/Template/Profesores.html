@@ -12,4 +12,49 @@
 
 <h1>Bienvenido Profesores</h1>
 
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Profecion</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for profesor in profesores %}
+        <tr>
+            
+            <td>
+                <div class="container">
+                {{ profesor.id }}
+                </div>
+            </td> 
+           
+            <td>
+                <div class="container">
+                {{ profesor.nombre }}
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                {{ profesor.apellitod }}
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                {{ profesor.email }}
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                {{ profesor.profecion }}
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
 {% endblock %}

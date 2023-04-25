@@ -1,5 +1,5 @@
 from django.shortcuts import render 
-from .models import Curso 
+from .models import Curso , Profesor
 from django.http import HttpResponse
 
 
@@ -26,7 +26,9 @@ def Estudiantes(request):
       return render (request ,'template/Estudiantes.html') 
 
 def Profesores(request):
-      return render (request,'template/Profesores.html') 
+      profesores = Profesor.objects.all()
+      context = {"profesores": profesores}
+      return render (request,'template/Profesores.html', context) 
 
 def Entregables(request):
       return render (request, 'template/Entregables.html') 
