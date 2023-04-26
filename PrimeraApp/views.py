@@ -26,7 +26,7 @@ def Cursos(request):
 def Estudiantes(request):
 
       estudiantes = Estudiante.objects.all()
-      contex = {"estudiante":estudiantes}
+      contex = {"estudiantes":estudiantes}
 
       return render (request ,'template/Estudiantes.html',contex) 
 

@@ -29,16 +29,24 @@
         {% for estudiante in estudiantes %}
         <tr>
             <td>
-            {{ estudiante.id }}
+                <div class="container">
+                {{ estudiante.id }}
+                </div>
             </td>
             <td>
-            {{ estudiante.nombre }}
+                <div class="container">
+                {{ estudiante.nombre }}
+                </div>
             </td>
             <td>
-            {{ estudiante.apellido }}
+                <div class="container">
+                {{ estudiante.apellido }}
+                </div>
             </td>
             <td>
-            {{ estudiante.email }}
+                <div class="container">
+                {{ estudiante.email }}
+                </div>
             </td>
         </tr>
         {% endfor %}
